@@ -52,7 +52,28 @@ Cada declaração de classe tem a palavra-chave class seguida imediatamente pelo
 <span style="color:blue">**Usar camel-case**</span>
 
 <span style="color:orange">*Variável de instância nome*</span>
+Um objeto tem atributos, implementados como vatriáveis de instância que o acompanham ao longo da sua vida. As variáveis de instância existem antes que os métodos sejam chamados em um objeto, enquanto eles são executados e depois que a execução deles foi concluída. Cada objeto (intância) da classe tem sua própria cópoia das variáveis de instância da classe. Uma classe normalmente contém um ou mais métodos que manipulam as variáveis de instância pertencentes aos objetosparticulares dela.
+Variáveis de instância instância são declaradas dentro de uma declaração de classe, mas fora do corpo dos métodos da classe
+```java
+private String nome;//Variável de instância
+```
 
+<span style="color:yellow">Boa prética de programação</span>
+
+<span style="color:green">Preferimos listar as variáveis de instância de uma classe no corpo dela, assim se pode ver o nome e o tipo das variáveis antes de elas serem utilizadas nos métodos da classe. É possivel listar as vatiáveis de instância da classe em qualquer lugar nela, fora das suas instruções de métod, mas espalhar as variáveis de instância pode resutar em um código dificil de ler. </span>
+
+<span style="color:orange">*Miodificadore de acesso public / private*</span>
+
+A maioria das declarações de variáveis de instância é precedida pela palavra-chave private. Da mesma forma que public, (private) é um modificador de acesso. As variáveis ou métodos declarados como o modificador de acesso private só são acessiveis a métodos da classe em que isso ocorre. Assim a variável nome só pode ser empregada nos métodos de cada objeto Conta nesse caso (setNome e getNome).
+
+<span style="color:orange">*Método set da classe Conta*</span>
+
+Analise do codigo da de claração do método setNome:
+```java
+public void setNome(String nome){
+this.nome = nome; // Armazena o nome.
+}
+```
 
 
 
