@@ -6,7 +6,7 @@ public class Conta {
 
     //Construtor
     public Conta() {
-        this.nome = getNome();
+        this.nome = getNome(); //Inicializa o nome.
     }
 
     //Método para definir o nome no objeto.
