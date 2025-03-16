@@ -1,21 +1,22 @@
 package com.evilcorp;
 
 public class Conta {
-    //Variável de instância.
+    
+    //Construtor
+    public Conta(){
+        this.nome = "Sem nome";
+    }
+
+    //Atributos
     private String nome;
 
-    //Construtor
-    public Conta() {
-        this.nome = getNome(); //Inicializa o nome.
+    //Métodos get / set
+    public String getNome(){
+        return  nome;
     }
 
-    //Método para definir o nome no objeto.
-    public void setNome(String nome) {
-        this.nome = nome; //Armazena o nome.
+    public void setNome(String nome){
+        this.nome = nome;
     }
 
-    //Método para obter o nome do objeto.
-    public String getNome() {
-        return nome; //Retorna o valor do nome para o chamador.
-    }
 }
