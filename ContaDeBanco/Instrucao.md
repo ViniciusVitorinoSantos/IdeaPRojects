@@ -75,6 +75,12 @@ this.nome = nome; // Armazena o nome.
 }
 ```
 
+Nós nos referimos à primeira linha de cada instrução de método como cabeçalho do método. O tipo de retorno do méotodo (que aparece antes do nome deste) especifica a qualidade dos dados que o método retorna ao chamador depois de realizar sua tarefa. O tipo de retorno void indica qu esetNome() executará uma tarefa, mas não retornará (isto é, fornecerá) nenhuma informação ao seu chamador. 
+O método setNome() recebe um parâmetro nome do tipo String → que representa o nome que será passado para o método como um argumento.
+
+Os parâmetros são declaradosem uma lista de parâmetros que está localizda entre os parênteses que seguem o nome do método
+
+
 
 
 
