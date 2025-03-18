@@ -107,6 +107,49 @@ public String getNome(){
     
 }
 ```
+Retorna ao chamador um nome do objeto específico Conta. O método tem uma lista vazia de parâmetros, então não exige informações adicionais para realizar sua tarefa. Ele retorna uma String. Quando um método que especifica um tipo de retorno diferente de <em style="color:red">void</em> é chamado e conclui sua tarefa, ele deve retornar um resultado para seu chamador. Uma instrução que chama o String, como especificado no tipo de retorno da declaração dp método.
+A instrução <em style="color:red">return</em> passa o valor da String da variável de instância nome de volta ao chamador. Por exemplo, quando o valor é retornado para a instrução, a instrução o usa para gerar saída do nome.
+
+
+<span style="color:orange">*Classe TesteConta que cria e usa um objeto da classe Conta*</span>
+
+Em seguida, gostariamos de usar a classe Conta em um aplicativo e chamar cada um dos seus métodos. Uma classe que contém um método main inicia a execução de um aplicativo java. A classe Conta não pode executar por si só porque não contém um método main -  se digitar java Conta na tela de comando, você obterá um erro indicando "Main method not found in class Conta". Para corrigir esse problema, você declarar uma classe separada que contenha um método main ou colocar um método main na classe Conta.
+
+
+<span style="color:orange">*Classe TesteConta condutora*</span>
+
+Para ajudá-lo a se preparar para os programas maiores que veremos futuramente neste livro e na indústria, usaremos uma xalsse TesteConta separada contendo o método main a fim de testar a classe Conta. Depois que começa a executar main pode chamar outros métodos nessa e em outras classes; estas podem por sua vez chamar outros métodos etc. O método main da classe TesteConta cria um objeto Contae chama os métodosnessa e em outras classes; estas podem por sua vez, chamar outros métodos etc. O méotodo main da classe TesteConta cria um objeto conta e chama os métodos getNome() e setNome(). Essa classe é as vezes denominada classe driver (ou <em style="color: yellow">"Classe condutora"</em>) -> assim como um objeto Pessoa dirige um objeto Carro informando o que fazer, a classe TesteConta orienta o objeto Conta indicando o que fazer ao chamar seus métodos.
+
+````java
+//Cria e manipula o objeto Conta
+import java.util.Scanner;
+
+public class TesteConta{
+    public static void main(String[] args) {
+        //Cria o objeto Scanner para obter entrada a partir da janela de comando 
+        Scanner input = new Scanner(System.in);
+        
+        //Cria um objeto conta e o atribui a minhaConta
+        Conta minhaConta = new Conta();
+        
+        //Exibe o valor inicial do nome(null)
+        System.out.printf("Nome inicial é : %s%n%n", minhaConta.getNome());
+        
+        //Solicita e lê o nome
+        System.out.println("Por favor digite o nome: ");//Lê uma linha de texto.
+        String oNome = input.nextLine();//Insere oNome em minhaConta.
+        System.out.println();//Gera saída de uma linha em branco.
+        
+        //Exibe o nome armazenado no objeto minhaConta
+        System.out.printf("O nome no objto minhaConta é %n%s%n " ,minhaConta.getNome() );
+    }
+}//Fim da classe TesteConta
+
+````
+
+<span style="color:orange">*Objeto Scanner para receber a entrada do usuário*</span>
+
+
 
 
 
