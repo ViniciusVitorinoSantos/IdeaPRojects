@@ -147,9 +147,10 @@ public class TesteConta{
 
 ````
 
-<span style="color:orange">*Objeto Scanner para receber a entrada do usuário*</span>
+<span style="color:blueviolet">*A classe Scanner fornece vérios outros métodos de entrada, como veremos. Um método semelhante ao <span style="color:yellow">nextLine() -> chamado next()</span> -> lê a próxima palavra. Ao pressionar ENTER depois de digitar algum texto, o método next() lê a proxima palavra. Ao pressionar ENTER depois de digitar algum texto, o método next() lê os caracteres até encontrar um caractere de espaço em branco (como espaço tabulação ou nova linha), então retorna uma String contendo os caracteres até, mas não incluindo , o caractere espaço em branco, que é descartado. Nenhuma informação depois do primeiro caractere de espaço em branco é perdida  - elas podem ser lidas por outras instruções que chamam os os métodos de Scanner posteriormente no programa.*</span>
 
 
+<span style="color:green"><strong>*Numca use como controle de formato uma String inserida pelo usauário. quando o método System.out.printf avalia a String de contorle de formato no primeiro argumento, o método executa as tarefas com base no especificador de conversão nessa String.  Se a String de controle de formato fosse obtida do usuário, alguém mal-intencionado poderia fornecer especificadores de conversão que seriam executados por System.out.printf, possivelmente causando uma falha de segurança.*</strong></span>
 
 
 
