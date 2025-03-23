@@ -48,3 +48,9 @@ Um construtor deve ter sempre o nome da classe. Já uma lista de parâmetros de 
 <hr>
 
 <span style="color:yellow">Parâmetro nome do construtor da calsse Conta e método setNome()</span>
+
+Lembre-se que os parâmetros de método são vairáveis locais. O construtor e o método setNome têm um parâmetro chamado nome. Embora esses parâmetros tenham o mesmo identificador (nome), este parâmetro é uma variável local do construtor que não é visivel para o método setNome().
+
+<span style="color:yellow">Classe TesteConta : inicialização de objetos Conta quando eles são criados</span>
+
+O programa TesteConta inicializa dois objetos Conta usando o construtor. O objeto Conta denominado Conta1. A palavra-chave new solicita memória do sistema para armazenar o objeto Conta, então chama implicitamente o construtor da classe correspondente para inicializa-lo. A chamada é indicada pelos parênteses após  o nome da classe, que contém o argumento "Jnae Green" usado para inicializar o nome do novo objeto. A expressão de criação da instância de classe na linha 10 retorna uma referência ao novo objeto, que e atribuído à variável conta1. A linha 11 repete esse processo passando o argumento "John Blue" a fim de inicializar o nome para conta2. As linhas 14 e 15 utilizam o método getNome() de nomes diferentes, confirmando que cada Conta mantém sua própria cópia da variável de instância nome.
